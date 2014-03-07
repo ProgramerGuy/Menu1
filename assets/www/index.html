@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-divice-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/stilos.css">
+</head>
+<body class="Menu">
+	<header class="Cabezera">
+		<a href="#" class="Boton"><img src="img/menu.png" alt="Menu"></a>
+		<nav class="Menu-deslizable">navegacion</nav>
+		<p>Aplicacion</p>
+	</header>
+	<div class="Contenerdor"><p>Loremm ipsum dolor sit amet, consectetur adipiscing elit. Proin diam justo, scelerisque non felis porta, placerat vestibulum nisi. Vestibulum ac elementum massa. In rutrum quis risus quis sollicitudin. Pellentesque non eros ante. Vestibulum sed tristique massa. Quisque et feugiat risus, eu tristique felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. Pellentesque varius ipsum in urna semper volutpat. Etiam ac magna scelerisque, sodales enim at, interdum nibh. Nulla nec blandit orci. Ut suscipit sollicitudin varius. Etiam ut bibendum purus, sit amet tristique lectus.
+“</p></div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script>
+	(function(){
+
+		var body = $('body');
+		$('.Boton').bind('click',function(){
+			body.toggleClass('Menu-open');
+			return false;
+		});
+	})();
+</script>
+
+</body>
+</html>
